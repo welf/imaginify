@@ -1,12 +1,17 @@
 'use client';
 
+import { Button } from '@/components/ui/button';
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetTrigger,
+} from '@/components/ui/sheet';
+import { navLinks } from '@/constants';
 import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { navLinks } from '../../../constants';
-import { Button } from '../ui/button';
-import { Sheet, SheetClose, SheetContent, SheetTrigger } from '../ui/sheet';
 
 const liClassName: string = 'p-18 flex whitespace-nowrap text-dark-700';
 const activeLiClassName: string = `${liClassName} gradient-text`;
