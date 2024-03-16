@@ -1,4 +1,4 @@
-import Sidebar from './Sidebar';
 import MobileNav from './MobileNav';
+import Sidebar from './Sidebar';
 
-export { Sidebar, MobileNav };
+export { MobileNav, Sidebar };
